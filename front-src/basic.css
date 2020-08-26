@@ -1,0 +1,397 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin : 0px;
+    background : url(../images/background3.png);
+}
+.header-container{
+    display: flex;
+    position: fixed;
+    top: 0px;   
+    flex-direction: row;
+    background: #089f98;
+    color: white;
+    width: 100vw;
+    z-index: 1000;
+}
+.header{
+    justify-self: start;
+    flex-grow: 4;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    justify-self: end;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.title{
+    padding: 10px;
+    padding-top: 15px;  
+    font-size: 2.5em;
+}
+.innertitle{
+    font-size : 50%;
+}
+.logo{
+    width: 70px;
+    height: 80px;
+    margin: 10px;
+    transition: all .5s linear;
+}
+.logo:hover{
+    transform : scale(1.1);
+}
+.nav-btn{
+    margin: 1vw;
+    margin-right: 2vw;
+    padding: 1.5vw;
+    font-size: 1.1em;
+    border-radius: 20%;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+.nav-btn:hover{
+    background: rgba(255,255,255,.8);
+    color: #089f98;
+}
+.top-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+
+}
+.workSpace{
+
+    width: 70vw;
+    display: grid;
+    background : #ffffff;
+    color : #089f98;
+    margin: 15vh auto;
+    box-shadow: 3px 3px 5px #808080, -3px -3px 5px #808080; 
+}
+.manitBuilding{
+    width : 70vw;
+    height : 55vh;;
+}
+.introduction{
+    width : 70vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;  
+}
+.introduction h1{
+    text-align: center;
+    color: black;
+    border-bottom: solid #089f98;
+    transition: all .3s linear;
+}
+.introduction h1:hover{
+    color: #089f98;
+    border-bottom: solid black;
+}
+.intro-content{
+    color: black;
+    padding: 10px 50px 10px 50px;
+    text-align: justify;
+}
+.register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.register h1{
+    text-align: center;
+    color: black;
+    border-bottom: solid #089f98;
+    transition: all .3s linear;
+}
+.register h1:hover{
+    color: #089f98;
+    border-bottom: solid black;
+}
+.register-btn{
+    align-self: center;
+    margin-top: 2vw;
+}
+.btn{
+    display: flex;
+    margin: 2vw 5vw 2vw 5vw;
+    padding: 4vw;
+    border-radius: 10%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color : #089f98;;
+    box-shadow: 0 5px 15px -5px #000000;
+    transition : .4s linear;
+}
+.btn:hover {
+    transform : scale(1.1);
+    background: #089f98;
+    color : #ffffff
+}
+.login{
+    margin-top: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.login h1{
+    text-align: center;
+    color: black;
+    border-bottom: solid #089f98;
+    transition: all .3s linear;
+}
+.login h1:hover{
+    color: #089f98;
+    border-bottom: solid black;
+}
+.login-btn-container{
+    display: flex;
+    flex-direction: row;
+}
+.login-btn{
+    margin: 2vw 5vw 2vw 5vw;
+    padding: 5vw;
+    border-radius: 10%;
+    color: #089f98;;
+    transition: all .5s linear;
+    text-align: center;
+    box-shadow: 5px 5px 5px #808080, -5px -5px 5px #808080;
+}
+.login-btn:hover{
+    color: black;
+    box-shadow: 10px 10px 10px #089f98, -10px -10px 10px #089f98;
+}
+footer{
+    grid-column: 1/-1;
+    width : 100%;
+    color : white;
+    background : #089f98;
+    
+   
+}
+.socialMedia{
+    width : 10%;;
+    margin: 0 auto;
+}
+.media{
+    font-size: 26px;
+    padding :10px;
+    color : #ffffff;
+    transition: all .5s linear;
+}
+.copyright{
+    width : 30%;
+    padding-bottom : 5px;
+    margin : 0 auto;
+} 
+.fa-facebook-square:hover{
+    color: blue;
+}
+.fa-instagram:hover{
+    color: #c13584;
+}
+.fa-google:hover{
+    color: #ff3333;
+}
+@media only screen and (max-width:1200px)
+{
+    .title{ 
+        margin-top: 5px;
+        padding: 5px; 
+        font-size: 1.6em;
+    }
+    .logo{
+        width: 50px;
+        height: 60px;
+        margin: 3px;
+    }
+    .nav-btn{
+        margin: 5px;
+        margin-right: 10px;
+        padding: 5px;
+        font-size: 1em;
+        border-radius: 20%;
+    }
+    .workSpace{
+        margin: 3vw auto;
+        width: 90vw;
+        margin-top: 7vh;
+        font-size: 75%; 
+    }
+    .introduction{
+        margin: 0px auto; 
+    }
+    .intro-content{
+        padding: 1vw .1vw 1vw .1vw;
+        margin: 0px;
+        font-size: 1.5em;
+    }
+    .manitBuilding{
+        height : 35vh;
+        width: 90vw;    
+    }
+    .btn{
+        width: 15vw;
+        height: 7vw;
+        padding: 3vw;
+    }
+    .login-btn{
+        margin: 1vw 3vw 4vw 3vw;
+        padding: 3vw;
+        width: 15vw;
+    }
+    .socialMedia{
+        width : 19%;;
+    }
+    .copyright{
+        font-size: 1em;
+        text-align: center;
+    }
+}
+@media only screen and (max-width:700px)
+{
+    .title{ 
+        margin-top: 3px;
+        padding: 2px;
+        padding-top: 3x;  
+        font-size: 1em;
+    }
+    .logo{
+        width: 30px;
+        height: 40px;
+        margin: 3px;
+    }
+    .nav-btn{
+        margin: 2px;
+        padding: 1px;
+        font-size: .5em;
+        border-radius: 20%;
+    }
+    .register{
+        font-size: 75%;
+    }
+    .workSpace{
+        margin: 3vw auto;
+        width: 90vw;
+        margin-top: 10vh;
+        font-size: 75%; 
+    }
+    .introduction{
+        margin: 0px auto; 
+    }
+    .intro-content{
+        padding: 1vw .5vw 1vw .5vw;
+    }
+    .manitBuilding{
+        height : 35vh;
+        width: 90vw;    
+    }
+    .btn{
+        display: flex;
+        width: 25vw;
+        height: 13vh;
+    }
+    .login-btn{
+        margin: 1vw 3vw 4vw 3vw;
+        padding: 3vw;
+    }
+    .socialMedia{
+        width : 40%;;
+    }
+    .copyright{
+        width : 50%;
+        font-size: .6em;
+        text-align: center; 
+        
+    } 
+}input[type=number], select, textarea{
+		width: 100%;
+		padding: 12px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+		resize: vertical;
+	}
+	input[type=text], select, textarea{
+		width: 100%;
+		padding: 12px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+		resize: vertical;
+	}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border:  1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+input[type=reset] {
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+  width:80px;
+  cursor: pointer;
+  float: left;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75,  {
+    width: 100%;
+    margin-top: 0;
+  }
+}

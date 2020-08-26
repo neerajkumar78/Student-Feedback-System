@@ -1,0 +1,142 @@
+body{
+    margin : 0px;
+    background : url(../images/background3.png);
+}
+.top-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+}
+.header-container{
+    display: flex;
+    grid-column: 1/-1;
+    grid-row: 1/span 3;
+}
+.header{
+    justify-self: start;
+    flex-grow: 4;
+}
+.nav{
+    justify-self: end;
+    flex-grow: 1;
+}
+.cover{
+    grid-column: 1/-1;
+    height: 70vh;
+    display: flex;
+    align-item: center;
+    justify-content: center;
+}
+.grid{
+    grid-column: 1/-1;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+.footer{
+    grid-column: 1/-1;
+}
+.innertitle{
+    font-size : 50%;
+}
+.title{
+    display : inline;
+    position : absolute;
+    padding : 1%;
+    color :  white;
+    font-size : 250%;
+    top : 10%;
+    left : 7%;
+}
+header{
+    width : 100%;
+    height : 15%;
+    position : fixed;
+    top : 0%;
+    background : #089f98;
+}
+.register{
+    border :1px groove white;
+    padding : 1%;
+    margin-top : 3%;
+    margin-right : 3%;
+    float : right;
+    display: inline-block;
+    color : white;
+}
+.register:hover{
+    background: white;
+    color : #089f98;
+}
+.manitBuilding{
+    width : 100%;
+    height : 350px;
+}
+.logo{
+    width : 90px;
+    height : 75px;
+    position : relative;
+    padding : 1%;
+    background : #089f98;
+    transition : all 0.5s;
+}
+.logo:hover{
+    transform : scale(1.25);
+}
+.workSpace{
+    width : 70%;
+    margin : 10% auto;
+    background : #ffffff;
+    color : #089f98;
+    padding : 10px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+span{
+    display : block;
+    text-align: center;
+    font-size : 200%;
+    padding : 10px;
+}
+.login{
+    width : 80%;
+    margin : 10px auto;
+    padding: 20px;
+   
+}
+.btn{
+    display : inline-block;
+    width : 100px;
+    height : 50px;
+    padding: 20px;
+    margin-left : 100px; 
+    text-align: center;
+    border-radius: 30%;
+    color : #089f98;;
+    box-shadow: 0 5px 15px -5px #000000;
+    transition : .2s linear;
+}
+.btn:hover {
+    transform : scale(1.1);
+    background: #089f98;
+    color : #ffffff
+}
+footer{
+    width : 100%;
+    color : white;
+    position : fixed;
+    bottom : 0;
+    background : #089f98;
+}
+.socialMedia{
+    width : 10%;;
+    margin: 0 auto;
+}
+.media{
+    font-size: 26px;
+    padding :10px;
+    color : #ffffff;
+}
+.copyright{
+    width : 30%;
+    padding-bottom : 5px;
+    margin : 0 auto;
+}

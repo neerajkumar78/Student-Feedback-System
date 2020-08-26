@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Students' Feedback System</title>
+    <link rel='icon' href='../images/manitlogo3.jpg'>
+    <link rel='stylesheet' type='text/css' href='basic.css' />
+    <link rel='stylesheet' type='text/css' href='modal.css' />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class='header-container'>
+        <a href='http://www.manit.ac.in/'  class='header'>
+            <img class='logo' src='../images/manitlogo.png' alt='manit.ac.in' />
+            <div class='title'>
+                <div class='innertitle'>
+                    MAULANA AZAD NATIONAL INSTITUTE OF TECHNOLOGY
+                </div>
+                Students' Feedback System
+            </div>
+        </a>
+        <div class='nav'>
+            <a href='#home' class='nav-btn'>
+                Home
+            </a>
+            <a href='#register' class='nav-btn'>
+                    Register
+            </a>
+            <a href='#login' class='nav-btn'>
+                    Login
+            </a>
+        </div>
+    </div>
+    <div id='home'></div>
+    <div class='workSpace'>
+        <img class ='manitBuilding' src='../images/manitBuilding.jpg' alt='Manit Building' />
+        <div class='introduction'>
+            <div>
+                <h1>Introduction</h1>
+            </div>
+            <div id='register'></div>
+            <div class='intro-content'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam quaerat a, accusantium, vel repellendus corrupti tempore similique esse blanditiis doloribus neque. Possimus iure, culpa debitis iste quibusdam qui veritatis!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam quaerat a, accusantium, vel repellendus corrupti tempore similique esse blanditiis doloribus neque. Possimus iure, culpa debitis iste quibusdam qui veritatis!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam quaerat a, accusantium, vel repellendus corrupti tempore similique esse blanditiis doloribus neque. Possimus iure, culpa debitis iste quibusdam qui veritatis!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam quaerat a, accusantium, vel repellendus corrupti tempore similique esse blanditiis doloribus neque. Possimus iure, culpa debitis iste quibusdam qui veritatis!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam quaerat a, accusantium, vel repellendus corrupti tempore similique esse blanditiis doloribus neque. Possimus iure, culpa debitis iste quibusdam qui veritatis!
+            </div>
+        </div>
+        
+        <!-- Registration Modal -->
+        <div id="id01" class="modal register-modal">
+            <!-- Registration Modal Content -->
+            <form class="modal-content animate"  method="POST" action="../../back-src/signUp.php">
+                <span onclick="document.querySelector('.register-modal').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <h1 class='register-modal-heading' style="text-align: center;">Student Registration</h1>
+                
+                <div class="container">
+                    <label for="userName"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="userName" required>
+                
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" required>
+
+                    <label for="password"><b>Confirm password</b></label>
+                    <input type="password" placeholder="Enter Password" name="confirmPassword" required>
+                
+                </div>
+            
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="submit" name='submit' class="cancelbtn" style='display: inline-block; background-color: #089f98; '>Register</button>
+                    <button type="button" onclick="document.querySelector('.register-modal').style.display='none'" class="cancelbtn" style='position: absolute; right: 3%;'>Cancel</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Student Registration button -->
+        <div class='register'>
+            <div>
+                <h1>Student Registeration</h1>
+            </div>
+            <div class='btn register-btn' onclick="document.querySelector('.register-modal').style.display='block';">
+                <i class="fas fa-user-circle"><div>Student Registration</div></i>
+            </div>
+        </div>
+
+        <!-- Faculty Registration button -->
+
+
+
+
+        <!-- Login Modal -->
+        <div id="id01" class="modal login-modal">
+        <!-- Login Modal Content -->
+            <form class="modal-content animate" method="POST" action="../../back-src/login.php">
+                <span onclick="document.querySelector('.login-modal').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <h1 class='modal-heading' style="text-align: center;"></h1>
+                            
+                <div class="container">
+                    <label for="userName"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="userName" required>
+                
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" required>
+                
+                    <button class='login-button' type="submit" value='' name='submit'>Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+            
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.querySelector('.login-modal').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw"><a href="../../back-src/mail.php" style='text-decoration: none; color: #089f98'> Forgot password?</a></span>
+                </div>
+            </form>
+        </div>   
+        
+        
+        <!-- Login Section -->
+        <div class='login'>
+            <div>
+                <h1 id='login'>Login Section</h1>
+            </div>
+            <div class='login-btn-container'>
+                <!-- Student login button -->
+
+                <div class='login-btn' onclick="document.querySelector('.login-modal').style.display='block'; document.querySelector('.modal-heading').innerHTML='Student Login';
+                document.querySelector('.login-button').setAttribute('value','s');">
+                    <i class="fas fa-user-circle"><div>Student's Login</div></i>
+                </div>
+                
+                <!-- Faculty Login button -->
+                <div class='login-btn' onclick="document.querySelector('.login-modal').style.display='block'; document.querySelector('.modal-heading').innerHTML='Faculty Login';
+                document.querySelector('.login-button').setAttribute('value','f');">
+                    <i class="fas fa-user-circle"><div>Facultys' Login</div></i>
+                </div>
+                
+                <!-- Admin Login button -->
+                <div class='login-btn' onclick="document.querySelector('.login-modal').style.display='block'; document.querySelector('.modal-heading').innerHTML='Adim Login';
+                document.querySelector('.login-button').setAttribute('value','a');">
+                    <i class="fas fa-user-circle"><div>Admin's Login</div></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='top-container'>
+    <footer>
+        <div class='socialMedia'>
+                <a href=""> <div class="fab fa-facebook-square media" padding='10px'></div></a>
+                <a href=""><div class="fab fa-instagram media" padding='10px'></div></a>
+                <a href=""><div class="fab fa-google media" padding='10px'></div></a>
+        </div>
+        <div class='copyright'>
+                2019 All Rights Reserved Terms of Use and Privacy Policy
+        </div>
+    </footer> 
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+    </script> 
+</body>
+</html>
